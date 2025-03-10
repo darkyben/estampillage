@@ -12,6 +12,26 @@
   <style>
   @import url('https://fonts.googleapis.com/css2?family=Gelasio&display=swap');
 
+	  .separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+
+.separator:not(:empty)::before {
+  margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: .25em;
+}
  
 body {
   /*padding-top: 300px;*/
@@ -97,8 +117,7 @@ li + li {
 
 <h1>Estampillage</h1>
 <br>
-<h2>Sources & références</h2>
-<h2 class="separator">Tome 1 - Détournement de fonds</h2>
+<h2 class="separator">Sources & références : Tome 1 - Détournement de fonds</h2>
 <ul>
 
   <li>
@@ -423,7 +442,7 @@ li + li {
    </li>
 </ul>
 
-<h2 class="separator">Tome 2 - Détourné en dérision</h2>
+<h2 class="separator">Sources & références : Tome 2 - Détourné en dérision</h2>
 
 	<ul>
 	  <li>
